@@ -1,0 +1,30 @@
+<div class="product-details">
+  {{! Header }}
+  <section>
+    <h3>Beats Solo Wireles Headphones</h3>
+    <div class="text-warning">
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star"></i>
+      <i class="fa fa-star-half-o"></i>
+    </div>
+  </section>
+
+  {{! Price  }}
+  <section>
+    <del class="small text-black-50">$199.95</del>
+    <i class="text-danger font-weight-bold">$99.98</i>
+  </section>
+
+  <div>
+    <h5>Color</h5>
+    <div class="product-colors active-{{@color}}">
+      <button type="button" class="product-color color-red" {{on "click" (fn @onChangeColor "red")}}>
+      </button>
+
+      <button type="button" {{on "click" (fn @onChangeColor "black")}} class="product-color color-black" >
+      </button>
+    </div>
+  </div>
+</div>
